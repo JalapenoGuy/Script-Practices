@@ -164,5 +164,4 @@ local Event = game:GetService("ReplicatedStorage").Remotes.PlaceBlockRegion
 Event:InvokeServer(A_1, A_2, A_3)
 print("Complete")
 --Passed
-local Event = game:GetService("ReplicatedStorage").Remotes.PlaneScriptReady
-Event:FireServer()
+game.StarterGui:SetCore("SendNotification", {Title="Autobuild Complete"; Text="By JalapenoGuy"; Duration=2;})
